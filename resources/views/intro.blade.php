@@ -395,6 +395,133 @@ body {
 .contact-box button:hover {
     background: #4b2e1e;
 }
+.social-icons {
+    margin-left: 1200px;
+    display: flex;
+    gap: 18px;
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 20px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #4b2e1e;
+    transform: scale(1.2);
+}
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+
+    /* NAVBAR */
+    .navbar {
+        padding: 0 20px;
+        height: auto;
+        flex-wrap: wrap;
+    }
+
+    .menu {
+        position: static;
+        transform: none;
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .menu a {
+        display: inline-block;
+        margin: 8px 10px;
+        font-size: 16px;
+    }
+
+    .social-icons {
+        width: 100%;
+        justify-content: center;
+        margin: 10px 0;
+    }
+
+    /* HERO */
+    .hero-container {
+        flex-direction: column;
+        padding: 140px 20px 60px;
+        text-align: center;
+    }
+
+    .diamond-wrapper {
+        width: 220px;
+        height: 220px;
+        margin-bottom: 30px;
+    }
+
+    .hero-text h1 {
+        font-size: 42px;
+    }
+
+    .role {
+        font-size: 15px;
+        padding: 8px 22px;
+    }
+
+    .contact {
+        justify-content: center;
+        font-size: 14px;
+    }
+
+    .desc {
+        font-size: 16px;
+        padding-left: 12px;
+    }
+
+    /* ABOUT */
+    #about {
+        height: auto;
+        padding: 120px 20px;
+    }
+
+    .about-box {
+        padding: 25px;
+    }
+
+    .about-box h3 {
+        font-size: 24px;
+    }
+
+    .about-box p {
+        font-size: 16px;
+    }
+
+    /* SKILLS */
+    #skills {
+        height: auto;
+        padding: 120px 20px;
+    }
+
+    .skills-wrapper {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .skill-box {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    /* CONTACT */
+    #contact {
+        height: auto;
+        padding: 120px 20px;
+    }
+
+    .contact-box {
+        width: 100%;
+        max-width: 360px;
+        padding: 25px;
+    }
+}
 
 </style>
 </head>
@@ -420,6 +547,17 @@ body {
 <a href="#" onclick="showSection('contact')">Contact</a>
 
     </div>
+    <div class="social-icons">
+    <a href="https://www.linkedin.com/in/neha-patel-313b68293/" target="_blank">
+        <i class="fa-brands fa-linkedin-in"></i>
+    </a>
+    <a href="https://github.com/NEHAPATEL30" target="_blank">
+        <i class="fa-brands fa-github"></i>
+    </a>
+    <a href="https://www.instagram.com/nehuu.lly__/" target="_blank">
+        <i class="fa-brands fa-instagram"></i>
+    </a>
+</div>
 </nav>
 
 <!-- HERO SECTION -->
